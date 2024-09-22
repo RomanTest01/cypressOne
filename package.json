@@ -1,0 +1,20 @@
+{
+  "name": "cypressone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:cy": "cypress open",
+    "cypress:mobile:headed": "npx cypress run -b chrome --headed -C cypress.mobile.config.js",
+    "cypress:mobile:headless": "npx cypress run -b edge -C cypress.mobile.config.js",
+    "cypress:notebook:headed": "npx cypress run -b edge --headed -C cypress.config.js",
+    "cypress:notebook:headless": "npx cypress run -b chrome -C cypress.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.14.2"
+  }
+}
